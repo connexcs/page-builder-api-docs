@@ -1,0 +1,51 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc"]
+    },
+    "source": {
+        "include": ["./stubs", "README.md"]
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "templates": {
+        "referenceTitle": "ConnexCS Page Builder API Documentation",
+        "disableSort": false,
+        "collapse": true,
+        "resources": {
+            "google": "https://docs.connexcs.com/"
+        }
+    },
+    "opts": {
+        "destination": "./docs/",
+        "encoding": "utf8",
+        "private": true,
+        "recurse": true,
+		"template": "node_modules/docdash"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+	"docdash": {
+        "meta": {
+            "title": "ConnexCS Page Builder API Docs",
+            "description": "Documentation for ConnexCS Page Builder"
+        },
+		"menu": {
+            "Home Page": {
+                "href":"https://www.connexcs.com",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"home_page"
+            },
+            "Main Documentation": {
+                "href":"https://docs.connexcs.com",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"main_docs"
+            }
+		}
+	}
+}
