@@ -12,6 +12,7 @@ function page() {
 	/**
 		* Refresh
 		* @function refresh
+		* @memberof page
 		* @description refreshs the data
 		* @example
 		* this.refresh()
@@ -33,6 +34,7 @@ function page() {
 	/**
 		* Get A Component
 		* @function getComponent
+		* @memberof page
 		* @param {string} name - The component name
 		* @returns {Object} - Component Object
 		* @example
@@ -44,6 +46,7 @@ function page() {
 	/**
 		* Get Form Values From A Component
 		* @function getValues()
+		* @memberof page
 		* @returns The Data
 		* @example
 		* this.getComponent('dialog').getValues()
@@ -57,6 +60,7 @@ function page() {
 	/**
 		* Get A Value From An Object
 		* @function getValue
+		* @memberof page
 		* @params {string} fieldName - Field Name
 		* returns Value of the selected field
 		* @example
@@ -69,6 +73,7 @@ function page() {
 	/**
 		* Set Rules For A Field
 		* @function setRules
+		* @memberof page
 		* @params {string} field
 		* @params {Array} rules
 		* @example
@@ -83,6 +88,7 @@ function page() {
 	/**
 		* Delete Component
 		* @function deleteComponentInstance
+		* @memberof page
 		* @params {string} key
 		* @example - Delete a Dialog Component
 		* this.deleteComponentInstance('dialog')

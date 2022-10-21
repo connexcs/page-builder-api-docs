@@ -12,6 +12,7 @@ function eChart() {
 	/**
 		* Set Graph Option
 		* @function setOption
+		* @memberof eChart
 		* @params {Object} option
 		* @params {Boolean} notMerge - Optional. Default is false.
 		* @params {Boolean} lazyUpdate - Opional. Default is false.
@@ -33,6 +34,7 @@ function eChart() {
 	/**
 		* Get Graph Option Object
 		* @function getOption
+		* @memberof eChart
 		* @return Returns options object
 		* @description Contains configuration item and data merged from previous setOption.
 		* @example this.getOption()
@@ -42,6 +44,7 @@ function eChart() {
 	/**
 		* Resize Graph
 		* @function resize
+		* @memberof eChart
 		* @description Resizes chart, which should be called manually when container size changes.
 		* @example this.resize()
 	*/
@@ -50,6 +53,7 @@ function eChart() {
 	/**
 		* Show Loading Of Graph
 		* @function showLoading
+		* @memberof eChart
 		* @description Shows loading animation effect.
 		* @example this.showLoading()
 	*/
@@ -58,6 +62,7 @@ function eChart() {
 	/**
 		* Hide Loading Of Graph
 		* @function hideLoading
+		* @memberof eChart
 		* @description Hides loading animation effect.
 		* @example this.hideLoading()
 	*/
