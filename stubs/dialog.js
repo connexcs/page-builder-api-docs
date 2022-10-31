@@ -125,13 +125,17 @@ function dialog() {
 	function hide (fields) {
 	}
 	/**
-		* Set A Spinner On Save Button
+		* Set A Loading Spinner On Save Button
 		* @function confirmLoading
 		* @memberof dialog
-		* @param [boolean] [status = false]
-		* @example
+		* @param [boolean] status
 		* var myDialog = this.getComponent('myDialog')
+		* @example
+		* Show Loading Spinner On Save Button
 		* myDialog.confirmLoading(true)
+		* @example
+		* Hide Loading Spinner On Save Button
+		* myDialog.confirmLoading(false)
 	*/
 	function confirmLoading (status) {
 	}
