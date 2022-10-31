@@ -134,13 +134,15 @@ function dialog() {
 	* @param {Array} fields - Array of items
 	* @param {boolean} 
 	* @description A disabled input field is unusable and un-clickable.
-	* var myDialog = this.getComponent('myDialog')
-	* var disabledFieldsArray = ['name', 'age']
 	* @example
 	* // Disable Form Fields
+	* var myDialog = this.getComponent('myDialog')
+	* var disabledFieldsArray = ['name', 'age']
 	* myDialog.disabled(disabledFieldsArray, true)
 	* @example
 	* // Enable Form Fields For Customer Interaction
+	* var myDialog = this.getComponent('myDialog')
+	* var disabledFieldsArray = ['name', 'age']
 	* myDialog.disabled(disabledFieldsArray, false)
 	*/
 	function disabled (fields) {
