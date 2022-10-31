@@ -140,7 +140,7 @@ function dialog() {
 	* var disabledFieldsArray = ['name', 'age']
 	* myDialog.disabled(disabledFieldsArray, true)
 	* @example
-	* // Enable Form Fields For Customer Interaction
+	* // Enable Form Fields For User Interaction
 	* var myDialog = this.getComponent('myDialog')
 	* var disabledFieldsArray = ['name', 'age']
 	* myDialog.disabled(disabledFieldsArray, false)
