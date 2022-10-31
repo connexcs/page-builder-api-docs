@@ -10,46 +10,46 @@
 
 function dialog() {
 	/**
-		* Open The Dialog
-		* @function open
-		* @memberof dialog
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.open()
+	* Open The Dialog
+	* @function open
+	* @memberof dialog
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* myDialog.open()
 	*/
 	function open () {
 	}
 	/**
-		* Close The Dialog
-		* @function close
-		* @memberof dialog
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.close()
+	* Close The Dialog
+	* @function close
+	* @memberof dialog
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* myDialog.close()
 	*/
 	function close () {
 	}
 	/**
-		* Validate The Form In Dialog
-		* @function validate
-		* @memberof dialog
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.validate()
+	* Validate The Form In Dialog
+	* @function validate
+	* @memberof dialog
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* myDialog.validate()
 	*/
 	function validate () {
 	}
 	/**
-		* Validate The Form In Dialog
-		* @function setOptions
-		* @memberof dialog
-		* @param {Array} fields - Array of items
-		* @param {Object} options - Key-Value Pairs
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* var fieldsArray = ['name']
-		* var options = {required: true, placeholder: 'Enter Name', defaultValue: 'XYZ'}
-		* myDialog.setOptions(fieldsArray, options)
+	* Dynamically Set Form Validation Rules In Dialog
+	* @function setOptions
+	* @memberof dialog
+	* @param {Array} fields - Array of items
+	* @param {Object} options - Key-Value Pairs
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* var fieldsArray = ['name']
+	* var options = {required: true, placeholder: 'Enter Name', defaultValue: 'XYZ'}
+	* myDialog.setOptions(fieldsArray, options)
 	*/
 	function setOptions (fields, options) {
 	}
@@ -62,100 +62,101 @@ function dialog() {
 	* @example
 	* var myData = {name: 'Joe Blogs', age: 30};
 	* this.setData(myData);
-	 */
+	*/
 	function setData (value) {
-	},
+	}
 	/**
-		* Get Form Values From A Component
-		* @function getValues()
-		* @memberof dialog
-		* @returns The Data
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.getValues()
-		* @description Get the values of all fields in the dialg
-		* @returns {name: 'XYZ', age: 28, country: 'United Kingdom'}
+	* Get Form Values From A Component
+	* @function getValues()
+	* @memberof dialog
+	* @returns {Object}
+	* @description Get the values of all fields in the dialg
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* var data = myDialog.getValues()
+	* console.log(data) // {name: 'XYZ', age: 28, country: 'United Kingdom'}
 	*/
 	function getValues () {
 	}
 	/**
-		* Get A Value From An Object
-		* @function getValue
-		* @memberof dialog
-		* @param {string} fieldName - Field Name
-		* returns Value of the selected field
-		* @example
-		* var myData = {name: 'Joe Blogs', age: 30};
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.getValue('name')
-		* @returns 'Joe Blogs'
+	* Get A Value From An Object
+	* @function getValue
+	* @memberof dialog
+	* @param {string} fieldName - Field Name
+	* returns Value of the selected field
+	* @returns 'Joe Blogs'
+	* @example
+	* var myData = {name: 'Joe Blogs', age: 30};
+	* var myDialog = this.getComponent('myDialog')
+	* var data = myDialog.getValue('name')
+	* console.log(data) // 'Joe Blogs'
 	*/
 	function getValue (fieldName) {
 	}
 	/**
-		* Clear Form Validation In Dialog
-		* @function clearValidate
-		* @memberof dialog
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* myDialog.clearValidate()
+	* Clear Form Validation In Dialog
+	* @function clearValidate
+	* @memberof dialog
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* myDialog.clearValidate()
 	*/
 	function clearValidate () {
 	}
 	/**
-		* Display Fields In The Dialog
-		* @function display
-		* @memberof dialog
-		* @param {Array} fields - Array of items
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* var fieldsArray = ['name', 'age']
-		* myDialog.display(fieldsArray)
+	* Display Fields In The Dialog
+	* @function display
+	* @memberof dialog
+	* @param {Array} fields - Array of items
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* var fieldsArray = ['name', 'age']
+	* myDialog.display(fieldsArray)
 	*/
 	function display (fields) {
 	}
 	/**
-		* Hide Fields In The Dialog
-		* @function hide
-		* @memberof dialog
-		* @param {Array} fields - Array of items
-		* @example
-		* var myDialog = this.getComponent('myDialog')
-		* var fieldsArray = ['name', 'age']
-		* myDialog.hide(fieldsArray)
+	* Hide Fields In The Dialog
+	* @function hide
+	* @memberof dialog
+	* @param {Array} fields - Array of items
+	* @example
+	* var myDialog = this.getComponent('myDialog')
+	* var fieldsArray = ['name', 'age']
+	* myDialog.hide(fieldsArray)
 	*/
 	function hide (fields) {
 	}
 	/**
-		* Disable Fields In The Dialog
-		* @function disabled
-		* @memberof dialog
-		* @param {Array} fields - Array of items
-		* @param {boolean} 
-		* var myDialog = this.getComponent('myDialog')
-		* var disabledFieldsArray = ['name', 'age']
-		* @example
-		* Disable Form Fields
-		* myDialog.disabled(disabledFieldsArray, true)
-		* @example
-		* Enable Form Fields
-		* myDialog.disabled(disabledFieldsArray, false)
+	* Disable Fields In The Dialog
+	* @function disabled
+	* @memberof dialog
+	* @param {Array} fields - Array of items
+	* @param {boolean} 
+	* var myDialog = this.getComponent('myDialog')
+	* var disabledFieldsArray = ['name', 'age']
+	* @example
+	* Disable Form Fields
+	* myDialog.disabled(disabledFieldsArray, true)
+	* @example
+	* Enable Form Fields
+	* myDialog.disabled(disabledFieldsArray, false)
 	*/
 	function disabled (fields) {
 	}
 	/**
-		* Set A Loading Spinner On Save Button
-		* @function confirmLoading
-		* @memberof dialog
-		* @param {boolean} status
-		* var myDialog = this.getComponent('myDialog')
-		* @example
-		* Show Loading Spinner On Save Button
-		* myDialog.confirmLoading(true)
-		* @example
-		* Hide Loading Spinner On Save Button
-		* myDialog.confirmLoading(false)
-	*/
+	* Set A Loading Spinner On Save Button
+	* @function confirmLoading
+	* @memberof dialog
+	* @param {boolean} status
+	* var myDialog = this.getComponent('myDialog')
+	* @example
+	* Show Loading Spinner On Save Button
+	* myDialog.confirmLoading(true)
+	* @example
+	* Hide Loading Spinner On Save Button
+	* myDialog.confirmLoading(false)
+*/
 	function confirmLoading (status) {
 	}
 }
