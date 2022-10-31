@@ -10,6 +10,26 @@
 
 function dialog() {
 	/**
+		* Open The Dialog
+		* @function open
+		* @memberof dialog
+		* @example
+		* var myDialog = this.getComponent('myDialog')
+		* myDialog.open()
+	*/
+	function open () {
+	}
+	/**
+		* Close The Dialog
+		* @function close
+		* @memberof dialog
+		* @example
+		* var myDialog = this.getComponent('myDialog')
+		* myDialog.close()
+	*/
+	function close () {
+	}
+	/**
 		* Get A Component
 		* @function getComponent
 		* @memberof dialog
@@ -27,10 +47,8 @@ function dialog() {
 		* @memberof dialog
 		* @returns The Data
 		* @example
-		* this.getComponent('dialog').getValues()
-		* @example
-		* var dialog = this.getComponent('dialog')
-		* dialog.getValues()
+		* var myDialog = this.getComponent('myDialog')
+		* myDialog.getValues()
 		* @description To get form data values from a component
 	*/
 	function getValues () {
