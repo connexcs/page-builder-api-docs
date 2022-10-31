@@ -104,7 +104,7 @@ function dialog() {
 	function clearValidate () {
 	}
 	/**
-	* Display Fields In The Dialog
+	* Display Form Fields In The Dialog
 	* @function display
 	* @memberof dialog
 	* @param {Array} fields - Array of items
@@ -116,7 +116,7 @@ function dialog() {
 	function display (fields) {
 	}
 	/**
-	* Hide Fields In The Dialog
+	* Hide Form Fields In The Dialog
 	* @function hide
 	* @memberof dialog
 	* @param {Array} fields - Array of items
