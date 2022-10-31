@@ -5,6 +5,7 @@ client side JavaScript and Websockets.
 
 # You can read more about how to find and use it [here](https://page-builder-api-docs.connexcs.com/)
 You can read more about how to find and use it <a href="https://page-builder-api-docs.connexcs.com/" target="_blank">[here]</a>
+You can read more about how to find and use it <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>
 
 ## API
 
