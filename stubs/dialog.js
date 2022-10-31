@@ -43,11 +43,13 @@ function dialog() {
 		* Validate The Form In Dialog
 		* @function setOptions
 		* @memberof dialog
+		* @param {Array} fields - Array of items
+		* @param {Object} options - Key-Value Pairs
 		* @example
 		* var myDialog = this.getComponent('myDialog')
-		* var fields = []
-		* var options = []
-		* myDialog.setOptions(fields, options)
+		* var fieldsArray = ['name']
+		* var options = {required: true, placeholder: 'Enter Name', defaultValue: 'XYZ'}
+		* myDialog.setOptions(fieldsArray, options)
 	*/
 	function setOptions (fields, options) {
 	}
@@ -107,8 +109,8 @@ function dialog() {
 		* @param {Array} fields - Array of items
 		* @example
 		* var myDialog = this.getComponent('myDialog')
-		* var hideFieldsArray = ['name']
-		* myDialog.display(hideFieldsArray)
+		* var fieldsArray = ['name', 'age']
+		* myDialog.display(fieldsArray)
 	*/
 	function display (fields) {
 	}
@@ -116,19 +118,36 @@ function dialog() {
 		* Hide Fields In The Dialog
 		* @function hide
 		* @memberof dialog
-		* @param [Array] fields - Array of items
+		* @param {Array} fields - Array of items
 		* @example
 		* var myDialog = this.getComponent('myDialog')
-		* var hideFieldsArray = ['name']
-		* myDialog.hide(hideFieldsArray)
+		* var fieldsArray = ['name', 'age']
+		* myDialog.hide(fieldsArray)
 	*/
 	function hide (fields) {
+	}
+	/**
+		* Disable Fields In The Dialog
+		* @function disabled
+		* @memberof dialog
+		* @param {Array} fields - Array of items
+		* @param {boolean} 
+		* var myDialog = this.getComponent('myDialog')
+		* var disabledFieldsArray = ['name', 'age']
+		* @example
+		* Disable Form Fields
+		* myDialog.disabled(disabledFieldsArray, true)
+		* @example
+		* Enable Form Fields
+		* myDialog.disabled(disabledFieldsArray, false)
+	*/
+	function disabled (fields) {
 	}
 	/**
 		* Set A Loading Spinner On Save Button
 		* @function confirmLoading
 		* @memberof dialog
-		* @param [boolean] status
+		* @param {boolean} status
 		* var myDialog = this.getComponent('myDialog')
 		* @example
 		* Show Loading Spinner On Save Button
