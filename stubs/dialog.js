@@ -151,10 +151,10 @@ function dialog() {
 	* @param {boolean} status
 	* var myDialog = this.getComponent('myDialog')
 	* @example
-	* Show Loading Spinner On Save Button
+	* // Show Loading Spinner On Save Button
 	* myDialog.confirmLoading(true)
 	* @example
-	* Hide Loading Spinner On Save Button
+	* // Hide Loading Spinner On Save Button
 	* myDialog.confirmLoading(false)
 */
 	function confirmLoading (status) {
