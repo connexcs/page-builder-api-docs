@@ -60,8 +60,8 @@ function dialog() {
 	* @param {Object} Value - Key-Value pair
 	* @apiDescription setData can be used to populate a page/form with information stored in a key:value object
 	* @example
-	* var myData = {name: 'Joe Blogs', age: 30};
-	* this.setData(myData);
+	* var myData = {name: 'Joe Blogs', age: 30}
+	* this.setData(myData)
 	*/
 	function setData (value) {
 	}
@@ -133,13 +133,14 @@ function dialog() {
 	* @memberof dialog
 	* @param {Array} fields - Array of items
 	* @param {boolean} 
+	* @description A disabled input field is unusable and un-clickable.
 	* var myDialog = this.getComponent('myDialog')
 	* var disabledFieldsArray = ['name', 'age']
 	* @example
-	* Disable Form Fields
+	* // Disable Form Fields
 	* myDialog.disabled(disabledFieldsArray, true)
 	* @example
-	* Enable Form Fields
+	* // Enable Form Fields For Customer Interaction
 	* myDialog.disabled(disabledFieldsArray, false)
 	*/
 	function disabled (fields) {
