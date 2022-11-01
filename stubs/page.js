@@ -192,6 +192,7 @@ function page() {
 	/**
 	* send a request to GET, POST, PUT, DELETE
 	* @function sendRequest
+	* @memberof page
 	* @param {string} name
 	* @param {Object} args - arguments, datasource parameters
 	* @param {Object} extendOptions - extendOptions
@@ -209,6 +210,7 @@ function page() {
 	/**
 	* Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record)
 	* @function database
+	* @memberof page
 	* @param {string} name - Database name
 	* @example
 	* Get all the records from a database 'customer'
@@ -285,6 +287,7 @@ function page() {
 	/**
 	* Set Form Field Configuration Item
 	* @function setOptions
+	* @memberof page
 	* @param {Array} fields
 	* @param {Object} options - key-value pair
 	* @example
@@ -300,6 +303,7 @@ function page() {
 	* Dynamic option data assignment
 	* @function setOptionData
 	* @param {Array} fields
+	* @memberof page
 	* @param {Object} newData - key-value pair
 	* @example
 	* // pending
@@ -314,6 +318,7 @@ function page() {
 	/**
 	* Refresh the datasource data bound to the form field
 	* @function refreshFieldDataSource
+	* @memberof page
 	* @param {String} field - Datasource name
 	* @param {Object} args - key-value pair
 	* @example
