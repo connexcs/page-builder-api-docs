@@ -253,6 +253,7 @@ function page() {
 	/**
 	* Access scriptForge
 	* @function scriptForge
+	* @memberof page
 	* @param {string} name - script forge name
 	* @param {Object} data
 	* @param {string} fn - function name
