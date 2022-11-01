@@ -87,20 +87,20 @@ function database() {
 	}
 	/**
 	* // Delete a record by id
-	* @function cxDelete
+	* @function delete
 	* @memberof database
 	* @param {Number} id
 	* @example
 	* try {
 	*	var myDatabase = this.database('customer')
 	*	var id = 24
-	*	var res = await myDatabase.cxDelete(id)
+	*	var res = await myDatabase.delete(id)
 	*	// Returns Success
 	* } catch (err) {
 	*	// Error
 	* }
 	* @returns {Promise<Boolean>} Validation Success or Failure
 	*/
-	function cxDelete (id) {
+	function _delete (id) {
 	}
 }
