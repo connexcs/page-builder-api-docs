@@ -118,9 +118,8 @@ function dialog() {
 	}
 	/**
 	* Hide Form Fields In The Dialog.
-	* This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
-	* @function hide
 	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
+	* @function hide
 	* @memberof dialog
 	* @param {Array} fields - Array of items
 	* @example
