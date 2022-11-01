@@ -13,7 +13,7 @@ function page() {
 	* Refresh
 	* @function refresh
 	* @memberof page
-	* @description refreshs the data
+	* @description refresh the form, when the form data changes, you need to call this method for re-render
 	* @example
 	* this.refresh()
 	*/
@@ -32,14 +32,98 @@ function page() {
 	function setData (value) {
 	}
 	/**
+	* Get Form Data From A Component
+	* @function getData
+	* @memberof page
+	* @param {Boolean} [isValidate = true]
+	* @returns {Promise<Object>} All of the form data
+	* @example
+	* Validate form data Object by default
+	* try {
+	*	var data = await this.getData()
+	*	// if success returns validated data as an object {name: 'XYZ'}
+	*} catch (err) {
+	*	// returns  err message
+	*}
+	}
+	* @example
+	* var data = await this.getData(false)
+	* // data contains {name: 'XYZ'}
+	* @description To get form data
+	*/
+	function getData (value) {
+	}
+	/**
+	* Reset Form Fields Data
+	* @function reset
+	* @memberof page
+	* @apiDescription Reset form fields
+	* @example
+	* this.reset()
+	*/
+	function reset () {
+	}
+	/**
+	* Hide Fields
+	* @function hide
+	* @memberof page
+	* @param {Array} fields - ['name', 'age']
+	* @apiDescription Hide the fields
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.display display function}
+	* @example
+	* var formData = {name: 'XYZ', age: 28, country: 'England'}
+	* var fields = ['name', 'age']
+	* this.hide(fields)
+	* // Displays only 'country' field in the form
+	*/
+	function hide (fields) {
+	}
+	/**
+	* Display/Show Fields
+	* @function display
+	* @memberof page
+	* @param {Array} fields
+	* @apiDescription Display/Show the fields
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.hide hide function}
+	* @example
+	* var formData = {name: 'XYZ', age: 28, country: 'England'}
+	* var fields = ['name', 'age']
+	* this.display(fields)
+	* // Displays only 'name' and 'age' fields in the form
+	*/
+	function display (fields) {
+	}
+	/**
+	* Disable Fields
+	* @function disabled
+	* @memberof page
+	* @param {Array} fields
+	* @param {Boolean} disabled - true/false
+	* @apiDescription Disable the fields
+	* @description Dynamically set whether a form field is disabled
+	* @example
+	* // Disable name and age fields from user interaction
+	* var formData = {name: 'XYZ', age: 28, country: 'England'}
+	* var fields = ['name', 'age']
+	* this.disabled(fields, true)
+	* // 'name' and 'age' fields in the form are unclickable and unchangeable
+	* @example
+	* // Enable name and age fields for user interaction
+	* this.disabled(fields, false)
+	* // 'name' and 'age' fields in the form are now enabled for user interaction
+	*/
+	function disabled (fields, disabled) {
+	}
+	/**
 	* Get A Component
 	* @function getComponent
 	* @memberof page
 	* @param {string} name - The component name
+	* @description 'dialog' is the ID field in the 'Component Attribute' tab
 	* @returns {Object} - Component Object
 	* @example
-	* this.getComponent('dialog')
-	* @description 'dialog' is the ID field in the 'Component Attribute' tab
+	* var myDialog = this.getComponent('myDialog')
+	* // myDialog component object
 	*/
 	function getComponent (name) {
 	}
