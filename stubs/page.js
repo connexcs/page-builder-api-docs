@@ -64,12 +64,11 @@ function page() {
 	function reset () {
 	}
 	/**
-	* Hide Fields
+	* Hide Fields. This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.display display function}
 	* @function hide
 	* @memberof page
 	* @param {Array} fields - ['name', 'age']
 	* @apiDescription Hide the fields
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.display display function}
 	* @example
 	* var formData = {name: 'XYZ', age: 28, country: 'England'}
 	* var fields = ['name', 'age']
@@ -79,12 +78,11 @@ function page() {
 	function hide (fields) {
 	}
 	/**
-	* Display/Show Fields
+	* Display/Show Fields. This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.hide hide function}
 	* @function display
 	* @memberof page
 	* @param {Array} fields
 	* @apiDescription Display/Show the fields
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.hide hide function}
 	* @example
 	* var formData = {name: 'XYZ', age: 28, country: 'England'}
 	* var fields = ['name', 'age']
@@ -128,12 +126,11 @@ function page() {
 	function getComponent (name) {
 	}
 	/**
-	* Add style class to form item
+	* Add style class to form item. This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.removeClassName removeClassName function}
 	* @function addClassName
 	* @memberof page
 	* @param {Array} fields
 	* @param {Boolean} disabled - true/false
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.removeClassName removeClassName function}
 	* @example
 	* var formData = {name: 'XYZ', age: 28, country: 'England'}
 	* .custom-style {
@@ -147,12 +144,11 @@ function page() {
 	function addClassName (name) {
 	}
 	/**
-	* Remove form item style class
+	* Remove form item style class. This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.addClassName addClassName function}
 	* @function removeClassName
 	* @memberof page
 	* @param {Array} fields
 	* @param {Boolean} disabled - true/false
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.addClassName addClassName function}
 	* @example
 	* var formData = {name: 'XYZ', age: 28, country: 'England'}
 	* .custom-style {
@@ -208,8 +204,8 @@ function page() {
 	function sendRequest (name, args) {
 	}
 	/**
-	* Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record)
-	* This is opposite of {@link https://page-builder-api-docs.connexcs.com/database.html database function}
+	* Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record).
+	* This is an Object of functions. {@link https://page-builder-api-docs.connexcs.com/database.html Click Here}
 	* @function database
 	* @memberof page
 	* @param {string} name - Database name
