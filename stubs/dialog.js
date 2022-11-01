@@ -104,7 +104,8 @@ function dialog() {
 	function clearValidate () {
 	}
 	/**
-	* Display Form Fields In The Dialog
+	* Display Form Fields In The Dialog.
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.hide hide function}
 	* @function display
 	* @memberof dialog
 	* @param {Array} fields - Array of items
@@ -116,10 +117,10 @@ function dialog() {
 	function display (fields) {
 	}
 	/**
-	* Hide Form Fields In The Dialog
-	* {@link https://github.com GitHub}
+	* Hide Form Fields In The Dialog.
 	* This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
 	* @function hide
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
 	* @memberof dialog
 	* @param {Array} fields - Array of items
 	* @example
