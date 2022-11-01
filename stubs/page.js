@@ -181,7 +181,7 @@ function page() {
 	* Get A Value From An Object
 	* @function getValue
 	* @memberof page
-	* @params {string} fieldName - Field Name
+	* @param {string} fieldName - Field Name
 	* returns Value of the selected field
 	* @example
 	* var myData = {name: 'Joe Blogs', age: 30};
@@ -191,25 +191,115 @@ function page() {
 	function getValue (fieldName) {
 	}
 	/**
-	* Set Rules For A Field
+	* send a request to GET, POST, PUT, DELETE
+	* @function sendRequest
+	* @param {string} name
+	* @param {Object} args - arguments, datasource parameters
+	* @param {Object} extendOptions - extendOptions
+	* @returns {Promise<Boolean>} Validation Success or Failure
+	* @example
+	* try {
+	*	var res = await this.sendRequest('customer')
+	*	// if success returns response and data as an array [{id: 1, name: 'XYZ'}, {id: 2, name: 'JOE'}]
+	*} catch (err) {
+	*	// returns  err message
+	*}
+	*/
+	function sendRequest (name, args) {
+	}
+	/**
+	* Access database for List(get all records), Read (get a record), Update (update a record), Delete (delete a record)
+	* @function database
+	* @param {string} name - Database name
+	* @example
+	* Get all the records from a database 'customer'
+	* @function list
+	* this.database('customer').list()
+	* @returns {Array} all the records
+	* @example
+	* Create a record
+	* @function create
+	* @param {Object} data
+	* var data = {name: 'XYZ', age: 24}
+	* this.database('customer').create(data)
+	* @returns success if created
+	* @example
+	* Read a record, by an id
+	* @function read
+	* @param {Number} id
+	* var id = 24
+	* this.database('customer').read(id)
+	* @returns a matched record, example {id: 24, name: 'XYZ'}
+	* @example
+	* Update a record
+	* @function update
+	* @param {Object} data
+	* var updatedData = {id: 24, name: 'XYZ-1'}
+	* this.database('customer').update(updatedData.id, updatedData)
+	* @returns success if created
+	* @example
+	* Delete a record by id
+	* @function update
+	* @param {Number} id
+	* var id = 24
+	* this.database('customer').delete(id)
+	* @returns success if deleted
+	*/
+	function database (name) {
+	}
+	/**
+	* Access scriptForge
+	* @function scriptForge
+	* @param {string} name - script forge name
+	* @param {Object} data
+	* @param {string} fn - function name
+	* @param {Object} args - arguments
+	* @returns {Promise<Boolean>} Validation Success or Failure
+	*/
+	function scriptForge (name = '', data = {}, fn = '', args = {}) {
+	}
+	/**
+	* Set Form Field Validation Rules
 	* @function setRules
 	* @memberof page
-	* @params {string} field
-	* @params {Array} rules
+	* @param {string} field
+	* @param {Array} rules - Array of Objects
 	* @example
+	// Make Name as a required field
 	* var field = 'name'
 	* var rules = [
 	* { required: true, message: 'Name is requried' }
+	* ]
+	* this.setRules(field, rules)
+	* @example
+	* // Remove name as a required field
+	* var field = 'name'
+	* var rules = [
+	* { required: false }
 	* ]
 	* this.setRules(field, rules)
 	*/
 	function setRules (field, rules) {
 	}
 	/**
+	* Set Form Field Configuration Item
+	* @function setOptions
+	* @param {Array} fields
+	* @param {Object} options - key-value pair
+	* @example
+	* // Make Name field: Have a default value, a placeholder and as required
+	* var formData = {name: '', age: 28, country: 'England'}
+	* var field = ['name']
+	* var options = {defaultValue: 'Default Name', placeholder: 'Name', required: true}
+	* this.setOptions(fields, options)
+	*/
+	function setOptions (fields, options) {
+	}
+	/**
 	* Delete Component
 	* @function deleteComponentInstance
 	* @memberof page
-	* @params {string} key
+	* @param {string} key
 	* @example - Delete a Dialog Component
 	* this.deleteComponentInstance('dialog')
 	* @description Deletes the component if it exists
