@@ -118,6 +118,7 @@ function dialog() {
 	/**
 	* Hide Form Fields In The Dialog
 	* {@link https://github.com GitHub}
+	* {@link dialog.html#.display display function}
 	* This is opposite of [display function]{@link dialog.html#.display}
 	* @function hide
 	* @memberof dialog
