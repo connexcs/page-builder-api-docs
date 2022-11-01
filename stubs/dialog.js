@@ -117,10 +117,11 @@ function dialog() {
 	}
 	/**
 	* Hide Form Fields In The Dialog
+	* {@link https://github.com GitHub}
+	* This is opposite of [display function]{@link dialog.html#.display}
 	* @function hide
 	* @memberof dialog
 	* @param {Array} fields - Array of items
-	* This is opposite of [display function]{@link dialog.html#.display}
 	* @example
 	* var myDialog = this.getComponent('myDialog')
 	* var fieldsArray = ['name', 'age']
