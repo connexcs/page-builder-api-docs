@@ -213,20 +213,20 @@ function page() {
 	* @memberof page
 	* @param {string} name - Database name
 	* @example
-	* Get all the records from a database 'customer'
-	* @function list
+	* // Get all the records from a database 'customer'
 	* this.database('customer').list()
+	* @function list
 	* @returns {Array}
 	* //  Returns all the records as array of objects (key-value pair)
 	* @example
-	* Create a record
+	* // Create a record
 	* @function create
 	* @param {Object} data
 	* var data = {name: 'XYZ', age: 24}
 	* this.database('customer').create(data)
 	* @returns success if created
 	* @example
-	* Read a record, by an id
+	* // Read a record, by an id
 	* @function read
 	* @param {Number} id
 	* var id = 24
@@ -234,14 +234,14 @@ function page() {
 	* @returns {Object}
 	* // Returns a matched record, example {id: 24, name: 'XYZ'}
 	* @example
-	* Update a record
+	* // Update a record
 	* @function update
 	* @param {Object} data
 	* var updatedData = {id: 24, name: 'XYZ-1'}
 	* this.database('customer').update(updatedData.id, updatedData)
 	* @returns success if created
 	* @example
-	* Delete a record by id
+	* // Delete a record by id
 	* @function update
 	* @param {Number} id
 	* var id = 24
