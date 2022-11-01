@@ -168,14 +168,12 @@ function page() {
 	/**
 	* Get Form Values From A Component
 	* @function getValues
-	* @memberof page
-	* @returns The Data
+	* @memberof dialog
+	* @returns {Object}
+	* @description Get the values of all fields in the dialg
 	* @example
-	* this.getComponent('dialog').getValues()
-	* @example
-	* var dialog = this.getComponent('dialog')
-	* dialog.getValues()
-	* @description To get form data values from a component
+	* var data = this.getValues()
+	* console.log(data) // {name: 'XYZ', age: 28, country: 'England'}
 	*/
 	function getValues () {
 	}
