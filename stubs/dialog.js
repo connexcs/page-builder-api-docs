@@ -56,7 +56,7 @@ function dialog() {
 	/**
 	* Set Data
 	* @function setData
-	* @memberof page
+	* @memberof dialog
 	* @param {Object} Value - Key-Value pair
 	* @apiDescription setData can be used to populate a page/form with information stored in a key:value object
 	* @example
@@ -104,8 +104,7 @@ function dialog() {
 	function clearValidate () {
 	}
 	/**
-	* Display Form Fields In The Dialog.
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.hide hide function}
+	* Display Form Fields In The Dialog. This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.hide hide function}
 	* @function display
 	* @memberof dialog
 	* @param {Array} fields - Array of items
@@ -117,8 +116,7 @@ function dialog() {
 	function display (fields) {
 	}
 	/**
-	* Hide Form Fields In The Dialog.
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
+	* Hide Form Fields In The Dialog. This is opposite of {@link https://page-builder-api-docs.connexcs.com/dialog.html#.display display function}
 	* @function hide
 	* @memberof dialog
 	* @param {Array} fields - Array of items
