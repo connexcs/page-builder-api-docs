@@ -120,7 +120,7 @@ function dialog() {
 	* @function hide
 	* @memberof dialog
 	* @param {Array} fields - Array of items
-	* @description This is opposite of [display function]{@link dialog.html#.display}
+	* This is opposite of [display function]{@link dialog.html#.display}
 	* @example
 	* var myDialog = this.getComponent('myDialog')
 	* var fieldsArray = ['name', 'age']
