@@ -182,11 +182,10 @@ function page() {
 	* @function getValue
 	* @memberof page
 	* @param {string} fieldName - Field Name
-	* returns Value of the selected field
+	* @returns 'Joe Blogs'
 	* @example
 	* var myData = {name: 'Joe Blogs', age: 30};
 	* this.getValue('name')
-	* @returns 'Joe Blogs'
 	*/
 	function getValue (fieldName) {
 	}
@@ -215,7 +214,8 @@ function page() {
 	* Get all the records from a database 'customer'
 	* @function list
 	* this.database('customer').list()
-	* @returns {Array} all the records
+	* @returns {Array}
+	* //  Returns all the records as array of objects (key-value pair)
 	* @example
 	* Create a record
 	* @function create
@@ -229,7 +229,8 @@ function page() {
 	* @param {Number} id
 	* var id = 24
 	* this.database('customer').read(id)
-	* @returns a matched record, example {id: 24, name: 'XYZ'}
+	* @returns {Object}
+	* // Returns a matched record, example {id: 24, name: 'XYZ'}
 	* @example
 	* Update a record
 	* @function update
@@ -296,6 +297,62 @@ function page() {
 	function setOptions (fields, options) {
 	}
 	/**
+	* Dynamic option data assignment
+	* @function setOptionData
+	* @param {Array} fields
+	* @param {Object} newData - key-value pair
+	* @example
+	* // pending
+	* var formData = {name: '', age: 28, country: 'England'}
+	* var field = ['name']
+	* var newData = {}
+	* this.setOptionData(fields, newData)
+	* Ask Jon
+	*/
+	function setOptionData (fields, newData) {
+	}
+	/**
+	* Refresh the datasource data bound to the form field
+	* @function refreshFieldDataSource
+	* @param {String} field - Datasource name
+	* @param {Object} args - key-value pair
+	* @example
+	* Get Provider Rate Cards When Provider Field Is selected
+	* var providerId = 1789
+	* var providerRateCards = this.refreshFieldDataSource('card', {id: providerId})
+	* @retuns Array of objects (key-value pairs)
+	* // Returns array of objects [
+	* //	{key: 23, value: 'Provider Rate Card 1'},
+	* //	{key: 28, value: 'Provider Rate Card 3'}
+	]
+	*/
+	function refreshFieldDataSource (field, args) {
+	}
+	/**
+	* Validate Form Fields
+	* @function validate
+	* @memberof page
+	* @param {Array} [fields = []]
+	* @returns {Promise<Boolean>} Validation Success or Failure
+	* @example
+	* Validate Only A Set Of Array Of Fields
+	* var formData = {name: '', age: 28, country: 'England'}
+	* var fields = ['name', 'age']
+	* this.validate(fields)
+	* @example
+	* If No Array Of Fields, Validates The Entire Form
+	* this.validate()
+	* @description Validates the form data or a key-value pair
+	* // Returns Both The Success And Failure Results
+	*/
+	function validate (fields) {
+	}
+/*
+	/**
+	* Call The JS Event Of The Form Configuration
+	function triggerEvent (eventName, args) {
+	}
+	/**
 	* Delete Component
 	* @function deleteComponentInstance
 	* @memberof page
@@ -303,7 +360,7 @@ function page() {
 	* @example - Delete a Dialog Component
 	* this.deleteComponentInstance('dialog')
 	* @description Deletes the component if it exists
-	*/
 	function deleteComponentInstance (key) {
 	}
+	*/
 }
