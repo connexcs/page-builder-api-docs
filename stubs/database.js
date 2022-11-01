@@ -13,7 +13,7 @@ function database() {
 	* Get All The Records From Database
 	* This is a database function in page.js. {@link https://page-builder-api-docs.connexcs.com/page.html#.database Click Here}
 	* @function list
-	* @memberof dialog
+	* @memberof database
 	* @example
 	* // Get all the records from a database 'customer'
 	* var myDatabase = this.database('customer')
@@ -33,7 +33,7 @@ function database() {
 	/**
 	* Create A Record In Customer Database
 	* @function create
-	* @memberof dialog
+	* @memberof database
 	* @param {Object} data
 	* @example
 	* // Create a record
@@ -51,7 +51,7 @@ function database() {
 	/**
 	* Read a record, by an id
 	* @function read
-	* @memberof dialog
+	* @memberof database
 	* @param {Number} id
 	* @example
 	* try {
@@ -69,7 +69,7 @@ function database() {
 	/**
 	* Update a record
 	* @function update
-	* @memberof dialog
+	* @memberof database
 	* @param {Number} id - Record Id
 	* @param {Object} updatedData - key-value pair
 	* @example
@@ -88,7 +88,7 @@ function database() {
 	/**
 	* // Delete a record by id
 	* @function cxDelete
-	* @memberof dialog
+	* @memberof database
 	* @param {Number} id
 	* @example
 	* try {
