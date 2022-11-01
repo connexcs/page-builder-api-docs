@@ -128,6 +128,44 @@ function page() {
 	function getComponent (name) {
 	}
 	/**
+	* Add style class to form item
+	* @function addClassName
+	* @memberof page
+	* @param {Array} fields
+	* @param {Boolean} disabled - true/false
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.removeClassName removeClassName function}
+	* @example
+	* var formData = {name: 'XYZ', age: 28, country: 'England'}
+	* .custom-style {
+	*	background: red;		
+	* }
+	* var className = 'custom-style'
+	* var fields = ['name', 'age']
+	* this.addClassName(fields, className)
+	* // Now the 'background color' of Name and Age fields are 'red' in color
+	*/
+	function addClassName (name) {
+	}
+	/**
+	* Remove form item style class
+	* @function removeClassName
+	* @memberof page
+	* @param {Array} fields
+	* @param {Boolean} disabled - true/false
+	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/page.html#.addClassName addClassName function}
+	* @example
+	* var formData = {name: 'XYZ', age: 28, country: 'England'}
+	* .custom-style {
+	*	background: red;		
+	* }
+	* var className = 'custom-style'
+	* var fields = ['name', 'age']
+	* this.removeClassName(fields, className)
+	* // Now the 'background color' of Name and Age fields are not 'red' in color
+	*/
+	function removeClassName (name) {
+	}
+	/**
 	* Get Form Values From A Component
 	* @function getValues
 	* @memberof page
