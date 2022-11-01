@@ -67,7 +67,7 @@ function dialog() {
 	}
 	/**
 	* Get Form Values From A Component
-	* @function getValues()
+	* @function getValues
 	* @memberof dialog
 	* @returns {Object}
 	* @description Get the values of all fields in the dialg
@@ -156,7 +156,7 @@ function dialog() {
 	* @example
 	* // Show Loading Spinner On Save Button
 	* myDialog.confirmLoading(true)
-	* @example
+	* // await [Do Some Work]	
 	* // Hide Loading Spinner On Save Button
 	* myDialog.confirmLoading(false)
 */
