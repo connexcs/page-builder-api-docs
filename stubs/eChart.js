@@ -55,7 +55,7 @@ function eChart() {
 	* @function showLoading
 	* @memberof eChart
 	* @description Shows loading animation effect.
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/echart#.hideLoading hideLoading function}
+	* This is opposite of {@link https://page-builder-api-docs.connexcs.com/echart#.hideLoading hideLoading function}
 	* @example this.showLoading()
 	*/
 	function showLoading () {
@@ -65,7 +65,7 @@ function eChart() {
 	* @function hideLoading
 	* @memberof eChart
 	* @description Hides loading animation effect.
-	* @description This is opposite of {@link https://page-builder-api-docs.connexcs.com/echart#.showLoading showLoading function}
+	* This is opposite of {@link https://page-builder-api-docs.connexcs.com/echart#.showLoading showLoading function}
 	* @example this.hideLoading()
 	*/
 	function hideLoading () {
