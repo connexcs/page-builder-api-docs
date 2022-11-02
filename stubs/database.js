@@ -11,7 +11,7 @@
 function database() {
 	/**
 	* Get All The Records From Database
-	* This is a database function in page.js. {@link https://page-builder-api-docs.connexcs.com/page.html#.database Click Here}
+	* This is a {@link https://page-builder-api-docs.connexcs.com/page.html#.database database function in page.js}.
 	* @function list
 	* @memberof database
 	* @example
