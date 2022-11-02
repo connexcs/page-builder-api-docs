@@ -164,7 +164,7 @@ function page() {
 	/**
 	* Get Form Values From A Component
 	* @function getValues
-	* @memberof dialog
+	* @memberof page
 	* @returns {Object}
 	* @description Get the values of all fields in the dialg
 	* @example

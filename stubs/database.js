@@ -16,9 +16,6 @@ function database() {
 	* @memberof database
 	* @example
 	* // Get all the records from a database 'customer'
-	* var myDatabase = this.database('customer')
-	* myDatabase.list()
-	* @returns {Array}
 	* try {
 	*	var myDatabase = this.database('customer')
 	*	var res = await myDatabase.list()
@@ -26,7 +23,7 @@ function database() {
 	* } catch (err) {
 	*	// Error
 	* }
-	* @returns {Promise<Array>} If Success returns Database Records or Failure
+	* @returns {Array} If Success returns Database Records or Failure
 	*/
 	function list () {
 	}
